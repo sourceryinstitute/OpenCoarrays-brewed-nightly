@@ -15,4 +15,4 @@ env:
 
 install: brew update
 
-script: brew test-bot --HEAD opencoarrays
+script: brew test-bot --skip-setup --skip-homebrew --fail-fast --HEAD opencoarrays
