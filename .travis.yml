@@ -1,0 +1,18 @@
+
+language: minimal
+
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode10.2
+    - os: osx
+      osx_image: xcode10.1
+    - os: osx
+      osx_image: xcode9.2
+
+env:
+  - HOMEBREW_DEVELOPER=ON
+
+install: brew update
+
+script: brew test-bot --HEAD opencoarrays
